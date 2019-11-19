@@ -1,0 +1,262 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif, "Arial";
+  background-color: #fff; }
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.container {
+  max-width: 1360px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.container-nav {
+  max-width: 725px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header .col-md-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+.header .contact {
+  padding-top: 15px; }
+.header .time-work, .header .phones, .header .address {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #340F0F; }
+  .header .time-work .tel:hover, .header .phones .tel:hover, .header .address .tel:hover {
+    color: #340F0F; }
+  .header .time-work .btn, .header .phones .btn, .header .address .btn {
+    padding: 18px 22px;
+    border: 1px solid #340F0F;
+    border-radius: 0; }
+    .header .time-work .btn:hover, .header .phones .btn:hover, .header .address .btn:hover {
+      background-color: lightgray; }
+  .header .time-work .contact-title, .header .phones .contact-title, .header .address .contact-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #340F0F; }
+  .header .time-work .time-work, .header .time-work .phones, .header .phones .time-work, .header .phones .phones, .header .address .time-work, .header .address .phones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header .time-work .time-work .contact-title, .header .time-work .phones .contact-title, .header .phones .time-work .contact-title, .header .phones .phones .contact-title, .header .address .time-work .contact-title, .header .address .phones .contact-title {
+      display: inline-block; }
+    .header .time-work .time-work .new-line, .header .time-work .phones .new-line, .header .phones .time-work .new-line, .header .phones .phones .new-line, .header .address .time-work .new-line, .header .address .phones .new-line {
+      display: inline-block; }
+.header .header-nav {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 850px; }
+  .header .header-nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header .header-nav .nav-link {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #636363; }
+    .header .header-nav .nav-link:hover {
+      color: #340F0F; }
+
+.banner {
+  background: url("../../public/images/bg-banner.png") center no-repeat;
+  background-size: cover;
+  padding: 76px 0 54px 0; }
+  .banner .banner-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 87px;
+    text-transform: lowercase;
+    color: #000000;
+    margin: 0 0 30px; }
+  .banner .banner-text {
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #000000;
+    margin-bottom: 25px; }
+  .banner .btn {
+    padding: 18px 25px 18px 23px;
+    border: 1px solid #340F0F;
+    border-radius: 0; }
+    .banner .btn:hover {
+      background-color: lightgray; }
+  .banner .button {
+    margin-bottom: 112px; }
+  .banner .furniture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .banner .furniture .furniture-text {
+      font-family: "Poiret One", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      text-transform: lowercase;
+      color: #000000; }
+    .banner .furniture .furniture-link {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .banner .furniture .furniture-link:hover {
+        text-decoration: none; }
+
+.linens {
+  background: -webkit-gradient(linear, left top, right top, from(#F0ECDD), color-stop(49.93%, #FFFFF4), color-stop(64.36%, #FFFFF4), to(#EAE5D5));
+  background: linear-gradient(90deg, #F0ECDD 0%, #FFFFF4 49.93%, #FFFFF4 64.36%, #EAE5D5 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0 !important; }
+  .linens img {
+    border-style: none;
+    width: 100%;
+    height: auto; }
+  .linens .image {
+    width: 625px;
+    height: 399px; }
+  .linens .linens-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #FEC940;
+    margin-bottom: 35px; }
+  .linens .linens-text {
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: lowercase;
+    color: #000000;
+    margin: 0 0 25px; }
+  .linens .btn {
+    padding: 18px 25px 18px 23px;
+    border: 1px solid #340F0F;
+    border-radius: 0; }
+    .linens .btn:hover {
+      background-color: lightgray; }
+  .linens .button {
+    display: inline-block; }
+  .linens .button.f {
+    margin-right: 68px; }
+  .linens .act {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .linens .action {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 24px 70px 97px 31px;
+    position: relative; }
+  .linens .slick-prev:before, .linens .slick-next:before {
+    /* font-family: 'slick'; */
+    font-size: 1px;
+    line-height: 1;
+    opacity: 10.75;
+    color: white;
+    color: black; }
+  .linens .slick-prev {
+    left: 700px; }
+  .linens .slick-next {
+    right: 39px; }
+  .linens .slick-prev, .linens .slick-next {
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #E2E2E2;
+    border: 1px solid #E2E2E2;
+    outline: none;
+    background: transparent;
+    z-index: 9; }
+  .linens .slick-prev:active, .linens .slick-next:active {
+    color: #000;
+    border: 1px solid #E2E2E2;
+    background: #E2E2E2; }
+  .linens .slick-dots {
+    position: absolute;
+    bottom: 16%;
+    display: block;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    right: 430px; }
+  .linens .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 23px 0 5px; }
+  .linens .slick-dots li button:before {
+    font-size: 16px; }
