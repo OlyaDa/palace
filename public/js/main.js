@@ -16,6 +16,13 @@
 //     }
 // });
 
+$(function(){
+    $('.toggle-menu').on('click',function(){
+        $('.main-nav').toggleClass('open');
+        $( ".toggle-menu" ).toggleClass( "menu-on");
+    });
+});
+
 $(document).ready(function(){
     $('.linens').slick({
         dots: true,
