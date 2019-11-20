@@ -77,6 +77,34 @@ $('.gallery__slider').slick({
     ]
 });
 
+$('.gallery__partners').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
 // $('.gallery__slider').slick({
 //     centerMode: true,
 //     centerPadding: '60px',
