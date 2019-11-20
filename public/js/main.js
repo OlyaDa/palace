@@ -32,4 +32,66 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: false,
+        prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+        nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+
+    });
+});
+
+$('.gallery__slider').slick({
+    variableHeight: true,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    speed: 1000,
+    centerPadding: '0',
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 3,
+    sliderToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                centerMode: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+// $('.gallery__slider').slick({
+//     centerMode: true,
+//     centerPadding: '60px',
+//     slidesToShow: 3,
+//     responsive: [
+//         {
+//             breakpoint: 768,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 3
+//             }
+//         },
+//         {
+//             breakpoint: 480,
+//             settings: {
+//                 arrows: false,
+//                 centerMode: true,
+//                 centerPadding: '40px',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
+
 // $('.single-item').slick();
