@@ -344,19 +344,20 @@ body {
 //////////////////////LINENS BEGIN//////////////////////
 
 .linens {
+  position: relative;
   background: linear-gradient(90deg, #F0ECDD 0%, #FFFFF4 49.93%, #FFFFF4 64.36%, #EAE5D5 100%);
   display: flex;
   margin-bottom: 0 !important;
 
-  img {
-    border-style: none;
-    width: 100%;
-    height: auto;
-  }
+
 
   .image {
-    width: 625px;
-    height: 399px;
+    max-width: 625px;
+    max-height: 399px;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .linens-title {
@@ -403,6 +404,8 @@ body {
     display: flex;
     align-items: center;
   }
+
+
 
   .action {
     background: #FFFFFF;
@@ -537,6 +540,116 @@ body {
     //-moz-osx-font-smoothing: grayscale;
   //}
 
+  @media (max-width: 1024px) {
+    padding: 15px 0;
+    .slick-dots {
+      position: absolute;
+      bottom: 16%;
+      display: block;
+      width: 20%;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      right: 277px;
+    }
+   .slick-prev {
+      left: 505px;
+    }
+    .slick-next {
+      right: 0;
+    }
+     .button.f {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .action .image-act {
+      width: 106px;
+      height: 91px;
+      position: absolute;
+      top: -5%;
+      right: -4%;
+    }
+    .slick-prev {
+      left: 490px;
+    }
+    .slick-dots {
+      right: 265px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .action {
+      text-align: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .action .image-act {
+      top: -8%;
+      right: -3%;
+    }
+    .button.f {
+      margin-right: 67px;
+    }
+    .slick-prev {
+      left: 30px;
+    }
+    .slick-next {
+      right: 32px;
+    }
+    .slick-prev, .slick-next {
+      top: 78%;
+    }
+    .slick-dots {
+      bottom: 7%;
+      width: 100%;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  @media (max-width: 568px) {
+    .action .image-act {
+      top: -7%;
+      right: -4%;
+    }
+    .button.f {
+      margin-right: 0;
+    }
+    .slick-prev {
+      left: 20px;
+    }
+    .slick-next {
+      right: 22px;
+    }
+    .slick-prev, .slick-next {
+      top: 78%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .action .image-act {
+      top: -6%;
+      right: -5%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .action .image-act {
+      top: -6%;
+      right: -5%;
+    }
+    .slick-prev {
+      left: 2px;
+    }
+    .slick-next {
+      right: 7px;
+    }
+  }
 }
 
 //////////////////////LINENS END//////////////////////
