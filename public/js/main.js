@@ -41,6 +41,15 @@ $(document).ready(function(){
     });
 });
 
+$('.carpets-slider').slick({
+    dots: false,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    infinite: true,
+});
+
 $('.gallery__slider').slick({
     variableHeight: true,
     autoplay: false,

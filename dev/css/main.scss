@@ -993,50 +993,7 @@ body {
     margin: 0 0 48px;
   }
 
-  .cards {
-    display: flex;
-    justify-content: space-between;
 
-    .card {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      align-items: center;
-      border-radius: 0;
-      border: none;
-      padding: 12px 23px;
-      background: #FFFFFF;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-
-      .image {
-        max-height: 88px;
-        max-width: 88px;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-
-      .card-text p {
-        max-width: 206px;
-        text-align: center;
-        margin: 0 0 0 39px;
-        font-family: "Poiret One", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 23px;
-        text-transform: lowercase;
-
-        color: #000000;
-      }
-    }
-
-    .card.marg {
-      margin-top: 20px;
-    }
-  }
 
   @media (max-width: 768px) {
     text-align: center;
@@ -1054,3 +1011,273 @@ body {
     }
   }
 }
+
+//////////////////////CURTAINS END//////////////////////
+
+//////////////CARDS BEGIN
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0;
+    border: none;
+    padding: 12px 23px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    .image {
+      max-height: 88px;
+      max-width: 88px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .card-text p {
+      max-width: 206px;
+      text-align: center;
+      margin: 0 0 0 39px;
+      font-family: "Poiret One", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+      text-transform: lowercase;
+
+      color: #000000;
+    }
+  }
+
+  .card.marg {
+    margin-top: 20px;
+  }
+
+  .card.mar {
+    margin-bottom: 20px;
+  }
+}
+
+//////////////CARDS END
+
+//////////////////////CARPETS BEGIN//////////////////////
+
+.carpets {
+  padding-top: 76px;
+  padding-bottom: 92px;
+
+  .carpets-title {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #340F0F;
+    margin-bottom: 20px;
+  }
+
+  .carpets-text {
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+    margin-bottom: 55px;
+  }
+
+  .carpets-gallery {
+    position: relative;
+    margin-bottom: 78px;
+  }
+
+  .carpets-slider {
+    position: relative;
+  }
+
+  .image-2 {
+    margin-left: auto;
+  }
+
+  ///slick-prev slick-next
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+
+  .slick-prev {
+    left: 0.3%;
+  }
+
+  .slick-next {
+    right: 0.3%;
+  }
+
+  .slick-prev, .slick-next {
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    top: 55%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #000;
+    border: 1px solid #000;
+    outline: none;
+    background: transparent;
+    z-index: 9;
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #fff;
+    border: 1px solid #000;
+    background: #000;
+  }
+
+  .cards {
+    margin-bottom: 83px;
+  }
+
+  /* --- gallery Start ------------------------------------------------*/
+  .gallery {
+    position: relative;
+
+    .gallery__slider {
+      z-index: 1;
+    }
+
+    .gallery-image {
+      position: relative;
+      outline: none;
+      margin-top: 45px;
+      margin-bottom: 45px;
+      z-index: -1;
+      max-width: 670px;
+      max-height: 366px;
+      filter: opacity(50%);
+
+      .btn {
+        position: absolute;
+        padding: 12px 72px;
+        bottom: -4px;
+        left: -4px;
+        background-color: #FEC940;
+        border-radius: 0;
+        display: none;
+
+        span {
+          font-family: "Open Sans", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 15px;
+          line-height: 33px;
+          text-align: center;
+          color: #000000;
+        }
+      }
+
+      img {
+        z-index: 1;
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    ///slick-center
+
+    .slick-center {
+      transition: .3s;
+      transform: scale(1.3);
+      z-index: 9;
+      position: relative;
+      filter: opacity(100%);
+    }
+
+    .slick-center:before, .slick-center:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 68%;
+      height: 28%;
+      border: #FEC940 solid 17px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .slick-center:before {
+      right: -4px;
+      top: -4px;
+      border-left: none;
+      border-bottom: none;
+      z-index: -5;
+    }
+
+    .slick-center:after {
+      left: -4px;
+      bottom: -4px;
+      border-right: none;
+      border-top: none;
+      z-index: -5;
+    }
+
+    ///slick-center end
+
+    ///slick-prev slick-next
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 0;
+    }
+
+    .slick-prev {
+      left: 30%;
+    }
+
+    .slick-next {
+      right: 30%;
+    }
+
+    .slick-prev, .slick-next {
+      font-size: 16px;
+      line-height: 0;
+      position: absolute;
+      top: 50%;
+      display: block;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      transform: translate(0, -50%);
+      cursor: pointer;
+      color: #000;
+      border: 1px solid #000;
+      outline: none;
+      background: transparent;
+      z-index: 9;
+    }
+
+    .slick-prev:active, .slick-next:active {
+      color: #fff;
+      border: 1px solid #000;
+      background: #000;
+    }
+
+    ///slick-prev slick-next end
+  }
+
+  /* --- gallery end ------------------------------------------------*/
+
+}
+
