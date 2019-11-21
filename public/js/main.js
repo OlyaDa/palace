@@ -50,6 +50,35 @@ $('.carpets-slider').slick({
     infinite: true,
 });
 
+// $('.gallery__slider').slick({
+//     variableHeight: true,
+//     autoplay: false,
+//     autoplaySpeed: 4000,
+//     speed: 1000,
+//     centerPadding: '0',
+//     infinite: true,
+//     centerMode: true,
+//     slidesToShow: 3,
+//     sliderToScroll: 1,
+//     arrows: true,
+//     dots: false,
+//     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+//     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+//     focusOnSelect: true,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 centerMode: false,
+//                 centerPadding: '0',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
+
+///center mode
+
 $('.gallery__slider').slick({
     variableHeight: true,
     autoplay: false,
@@ -58,6 +87,35 @@ $('.gallery__slider').slick({
     centerPadding: '0',
     infinite: true,
     centerMode: true,
+    slidesToShow: 3,
+    sliderToScroll: 1,
+    arrows: true,
+    dots: false,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    focusOnSelect: true,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                centerMode: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        }
+    ]
+});
+
+//first mode
+
+$('.gallery__slider-first').slick({
+    variableHeight: true,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    speed: 1000,
+    centerPadding: '0',
+    infinite: true,
+    centerMode: false,
     slidesToShow: 3,
     sliderToScroll: 1,
     arrows: true,
@@ -132,3 +190,15 @@ $('.gallery__partners').slick({
 // });
 
 // $('.single-item').slick();
+
+//reviews-slider
+
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    dots: true,
+});
