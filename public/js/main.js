@@ -28,9 +28,35 @@ $(document).ready(function(){
         dots: true,
         prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
         nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
 });
+
+// $('.action-slider').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: false,
+//     fade: true,
+//     asNavFor: '.image-sliderr'
+// });
+// $('.image-sliderr').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     asNavFor: '.action-slider',
+//     dots: true,
+//     centerMode: false,
+//     focusOnSelect: true,
+//     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+//     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+// });
 
 $(document).ready(function(){
     $('.slider').slick({

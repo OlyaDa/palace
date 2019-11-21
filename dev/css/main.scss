@@ -584,7 +584,9 @@ body {
   display: flex;
   margin-bottom: 0 !important;
 
-
+  //.linens-slider {
+  //  position: relative;
+  //}
 
   .image {
     max-width: 625px;
@@ -845,6 +847,13 @@ body {
       right: 0;
       left: 0;
     }
+
+    .image {
+      max-width: 625px;
+      max-height: 399px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   @media (max-width: 568px) {
@@ -862,7 +871,11 @@ body {
       right: 22px;
     }
     .slick-prev, .slick-next {
-      top: 78%;
+      top: 77%;
+    }
+
+    .action {
+      padding: 24px 28px;
     }
   }
 
@@ -870,6 +883,13 @@ body {
     .action .image-act {
       top: -6%;
       right: -5%;
+    }
+    .linens .slick-prev, .linens .slick-next {
+      top: 72%;
+    }
+
+    .linens .btn {
+      padding: 9px 18px 9px 18px;
     }
   }
 
