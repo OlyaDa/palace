@@ -140,7 +140,7 @@ body {
       display: none; }
     .header .header-nav .menu-bottom {
       display: none; }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .header .menu-bottom {
       display: block !important; }
       .header .menu-bottom .menu-bottom-inner {
@@ -533,9 +533,7 @@ body {
     .linens .linens .slick-prev, .linens .linens .slick-next {
       top: 72%; }
     .linens .linens .btn {
-      padding: 9px 18px 9px 18px;
-      border: 1px solid #340F0F;
-      border-radius: 0; } }
+      padding: 9px 18px 9px 18px; } }
   @media (max-width: 320px) {
     .linens .action .image-act {
       top: -6%;
