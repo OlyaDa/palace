@@ -202,3 +202,13 @@ $('.reviews-slider').slick({
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     dots: true,
 });
+
+
+$(window).scroll(function() {
+    let height = $(window).scrollTop();
+    if(height > 1){
+        $('.contact').addClass('header-fixed');
+    } else{
+        $('.contact').removeClass('header-fixed');
+    }
+});
