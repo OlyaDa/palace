@@ -29,6 +29,13 @@ body {
   margin-right: auto;
 }
 
+.container-form {
+  max-width: 374px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .holder-container {
   max-width: 626px;
   padding: 0 15px;
@@ -147,7 +154,7 @@ body {
       width: 18px;
       height: 12px;
       cursor: pointer;
-     display: none;
+      display: none;
       //margin-right: 21px;
       //margin-left: auto;
 
@@ -259,12 +266,12 @@ body {
       display: none !important;
     }
 
-  .logo-big {
-    display: inline-block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .logo-big {
+      display: inline-block;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .toggle-menu {
       display: block !important;
@@ -306,15 +313,15 @@ body {
     .main-nav {
 
 
-        //position: absolute;
-        //left: 0;
-        //right: 0;
-        //width: 100%;
-        //top: 100%;
-        //border-top: 1px solid #fff;
-        //background-color: #a0a0a0;
-        //padding: 25px 0;
-        //display: none;
+      //position: absolute;
+      //left: 0;
+      //right: 0;
+      //width: 100%;
+      //top: 100%;
+      //border-top: 1px solid #fff;
+      //background-color: #a0a0a0;
+      //padding: 25px 0;
+      //display: none;
 
       position: absolute;
       left: 0;
@@ -352,7 +359,7 @@ body {
     .btn {
       padding: 7px 10px !important;
     }
-     .logo-big {
+    .logo-big {
       max-width: 254px;
     }
   }
@@ -550,8 +557,8 @@ body {
   }
 
   @media (max-width: 415px) {
-      padding: 330px 0 54px 0;
-      //text-align: center;
+    padding: 330px 0 54px 0;
+    //text-align: center;
     .banner-title {
       font-size: 43px;
       line-height: 49px;
@@ -576,7 +583,7 @@ body {
       //border-radius: 0;
     }
 
-     .furniture {
+    .furniture {
       margin-bottom: 206px;
     }
 
@@ -820,7 +827,7 @@ body {
   //}
 
   @media (max-width: 1300px) {
-     .slick-dots {
+    .slick-dots {
       position: absolute;
       bottom: 16%;
       display: block;
@@ -1335,7 +1342,7 @@ body {
     //  padding: 8px 14px !important;
     //  flex-wrap: wrap;
     //}
-    }
+  }
 
 
   @media (max-width: 991px) {
@@ -1456,8 +1463,8 @@ body {
   }
 
   @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
 
 
     .card {
@@ -1875,7 +1882,7 @@ body {
   }
 
   @media (max-width: 1200px) {
-     .map-text {
+    .map-text {
       margin-bottom: 28px;
     }
     // .phones,  .address,  .time-work,  .social {
@@ -1888,7 +1895,7 @@ body {
 
   @media (max-width: 991px) {
     text-align: center;
-     .map-address {
+    .map-address {
       margin-left: auto;
       max-width: 623px;
       max-height: 436px;
@@ -1920,7 +1927,7 @@ body {
     .address {
       margin-bottom: 16px;
     }
-    }
+  }
 }
 
 //////////////////////MAP END//////////////////////
@@ -2184,7 +2191,7 @@ body {
     .floor-laminat:before {
       right: -7%;
     }
-    }
+  }
 
   @media (max-width: 576px) {
     .floor-covrolin:before {
@@ -2763,15 +2770,15 @@ body {
   @media (max-width: 991px) {
     text-align: center;
 
-     .gallery .slick-prev,  .gallery .slick-next {
+    .gallery .slick-prev,  .gallery .slick-next {
       top: 58%;
     }
 
-     .gallery .slick-prev {
+    .gallery .slick-prev {
       left: 0%;
     }
 
-     .gallery .slick-next {
+    .gallery .slick-next {
       right: 0%;
     }
 
@@ -2785,14 +2792,14 @@ body {
   }
 
   @media (max-width: 768px) {
-     .gallery .slick-prev,  .gallery .slick-next {
+    .gallery .slick-prev,  .gallery .slick-next {
       top: 56%;
     }
   }
 
 
   @media (max-width: 576px) {
-     .gallery .slick-prev,  .gallery .slick-next {
+    .gallery .slick-prev,  .gallery .slick-next {
       top: 50%;
     }
   }
@@ -3091,8 +3098,155 @@ body {
       left: -1% !important;
     }
   }
-  
-
-
   ///slick-prev slick-next end
 }
+
+
+//////////////////////REVIEWS END//////////////////////
+
+//////////////////////FOOTER BEGIN//////////////////////
+
+.footer {
+  padding: 90px 40px 28px 40px;
+
+
+  .address {
+    margin-bottom: 60px;
+  }
+
+  .phones, .address, .time-work, .social{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  time-work {
+    margin-bottom: 38px;
+  }
+
+  .phones {
+    margin-bottom: 36px;
+  }
+
+  .address-map-title {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #340F0F;
+  }
+
+  hr {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 38px 0;
+  }
+
+  .address-map-text, .tel {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #340F0F;
+  }
+
+  .cont-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social-icon {
+    display: flex;
+    .image {
+      margin-right: 50px;
+      width: 42px;
+      height: 42px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .tel {
+    display: flex;
+  }
+
+  .map-address {
+    //position: relative;
+    padding: 30px 32px;
+  }
+
+  .holder {
+    position: relative;
+  }
+
+  .modal-form {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    display: block;
+    padding: 30px 32px;
+    max-width: 440px;
+    max-height: 227px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+
+    .question {
+      font-family: "Poiret One", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: lowercase;
+      color: #000000;
+    }
+    input {
+      max-width: 374px;
+      padding: 10px;
+      width: 100%;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+    input[type="text"] {
+      margin-bottom: 30px;
+    }
+
+    input[type="number"] {
+      margin-bottom: 36px;
+    }
+    input:focus {
+      outline: none;
+    }
+
+
+    .btn {
+      padding: 18px 25px 18px 23px;
+      border: 1px solid #340F0F;
+      border-radius: 0;
+      &:hover {
+        background-color: lightgray;
+      }
+
+    }
+  }
+
+
+
+}
+
+//////////////////////FOOTER END//////////////////////
+

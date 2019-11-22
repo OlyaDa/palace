@@ -24,6 +24,12 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+.container-form {
+  max-width: 374px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .holder-container {
   max-width: 626px;
   padding: 0 15px;
@@ -1873,5 +1879,100 @@ body {
       align-items: center; }
     .reviews .slick-prev.slick-arrow {
       left: -1% !important; } }
+
+.footer {
+  padding: 90px 40px 28px 40px; }
+  .footer .address {
+    margin-bottom: 60px; }
+  .footer .phones, .footer .address, .footer .time-work, .footer .social {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .footer time-work {
+    margin-bottom: 38px; }
+  .footer .phones {
+    margin-bottom: 36px; }
+  .footer .address-map-title {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #340F0F; }
+  .footer hr {
+    background: rgba(0, 0, 0, 0.4);
+    margin: 38px 0; }
+  .footer .address-map-text, .footer .tel {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #340F0F; }
+  .footer .cont-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .footer .social-icon {
+    display: flex; }
+    .footer .social-icon .image {
+      margin-right: 50px;
+      width: 42px;
+      height: 42px; }
+      .footer .social-icon .image img {
+        width: 100%;
+        height: auto; }
+  .footer .tel {
+    display: flex; }
+  .footer .map-address {
+    padding: 30px 32px; }
+  .footer .holder {
+    position: relative; }
+  .footer .modal-form {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    display: block;
+    padding: 30px 32px;
+    max-width: 440px;
+    max-height: 227px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
+    .footer .modal-form .question {
+      font-family: "Poiret One", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: lowercase;
+      color: #000000; }
+    .footer .modal-form input {
+      max-width: 374px;
+      padding: 10px;
+      width: 100%;
+      display: block;
+      border: none;
+      border-bottom: 1px solid #000000;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000; }
+    .footer .modal-form input[type="text"] {
+      margin-bottom: 30px; }
+    .footer .modal-form input[type="number"] {
+      margin-bottom: 36px; }
+    .footer .modal-form input:focus {
+      outline: none; }
+    .footer .modal-form .btn {
+      padding: 18px 25px 18px 23px;
+      border: 1px solid #340F0F;
+      border-radius: 0; }
+      .footer .modal-form .btn:hover {
+        background-color: lightgray; }
 
 /*# sourceMappingURL=main.css.map */
