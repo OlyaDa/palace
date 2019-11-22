@@ -11,7 +11,7 @@
 //             items:1
 //         },
 //         1000:{
-//             items:1
+//             items:3
 //         }
 //     }
 // });
@@ -24,7 +24,7 @@ $(function(){
 });
 
 $(document).ready(function(){
-    $('.linens').slick({
+    $('.linens-slider').slick({
         dots: true,
         prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
         nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
@@ -40,23 +40,25 @@ $(document).ready(function(){
     });
 });
 
-// $('.action-slider').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: false,
-//     fade: true,
-//     asNavFor: '.image-sliderr'
-// });
-// $('.image-sliderr').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     asNavFor: '.action-slider',
-//     dots: true,
-//     centerMode: false,
-//     focusOnSelect: true,
-//     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-//     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-// });
+$('.reviews-slider').slick({
+    dots: true,
+    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                centerMode: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        },
+    ],
+});
+
 
 $(document).ready(function(){
     $('.slider').slick({
@@ -74,34 +76,17 @@ $('.carpets-slider').slick({
     slidesToShow: 2,
     slidesToScroll: 2,
     infinite: true,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                centerMode: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        },
+    ],
 });
-
-// $('.gallery__slider').slick({
-//     variableHeight: true,
-//     autoplay: false,
-//     autoplaySpeed: 4000,
-//     speed: 1000,
-//     centerPadding: '0',
-//     infinite: true,
-//     centerMode: true,
-//     slidesToShow: 3,
-//     sliderToScroll: 1,
-//     arrows: true,
-//     dots: false,
-//     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-//     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-//     focusOnSelect: true,
-//     responsive: [
-//         {
-//             breakpoint: 992,
-//             settings: {
-//                 centerMode: false,
-//                 centerPadding: '0',
-//                 slidesToShow: 1
-//             }
-//         }
-//     ]
-// });
 
 ///center mode
 
@@ -122,44 +107,44 @@ $('.gallery__slider').slick({
     focusOnSelect: true,
     responsive: [
         {
-            breakpoint: 992,
+            breakpoint: 991,
             settings: {
                 centerMode: false,
                 centerPadding: '0',
                 slidesToShow: 1
             }
         }
-    ]
+    ],
 });
 
 //first mode
 
-$('.gallery__slider-first').slick({
-    variableHeight: true,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    speed: 1000,
-    centerPadding: '0',
-    infinite: true,
-    centerMode: false,
-    slidesToShow: 3,
-    sliderToScroll: 1,
-    arrows: true,
-    dots: false,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    focusOnSelect: true,
-    responsive: [
-        {
-            breakpoint: 992,
-            settings: {
-                centerMode: false,
-                centerPadding: '0',
-                slidesToShow: 1
-            }
-        }
-    ]
-});
+// $('.gallery__slider-first').slick({
+//     variableHeight: true,
+//     autoplay: false,
+//     autoplaySpeed: 4000,
+//     speed: 1000,
+//     centerPadding: '0',
+//     infinite: true,
+//     centerMode: false,
+//     slidesToShow: 3,
+//     sliderToScroll: 1,
+//     arrows: true,
+//     dots: false,
+//     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
+//     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+//     focusOnSelect: true,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 centerMode: false,
+//                 centerPadding: '0',
+//                 slidesToShow: 1
+//             }
+//         }
+//     ]
+// });
 
 $('.gallery__partners').slick({
     centerMode: true,
@@ -169,66 +154,16 @@ $('.gallery__partners').slick({
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     responsive: [
         {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
+                arrows: true,
                 centerMode: true,
                 centerPadding: '40px',
                 slidesToShow: 1
             }
-        }
+        },
     ]
 });
-
-// $('.gallery__slider').slick({
-//     centerMode: true,
-//     centerPadding: '60px',
-//     slidesToShow: 3,
-//     responsive: [
-//         {
-//             breakpoint: 768,
-//             settings: {
-//                 arrows: false,
-//                 centerMode: true,
-//                 centerPadding: '40px',
-//                 slidesToShow: 3
-//             }
-//         },
-//         {
-//             breakpoint: 480,
-//             settings: {
-//                 arrows: false,
-//                 centerMode: true,
-//                 centerPadding: '40px',
-//                 slidesToShow: 1
-//             }
-//         }
-//     ]
-// });
-
-// $('.single-item').slick();
-
-//reviews-slider
-
-$('.reviews-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    dots: true,
-});
-
 
 $(window).scroll(function() {
     let height = $(window).scrollTop();
