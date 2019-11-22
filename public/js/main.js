@@ -49,14 +49,23 @@ $('.reviews-slider').slick({
     infinite: true,
     responsive: [
         {
-            breakpoint: 991,
+            breakpoint: 992,
             settings: {
                 centerMode: false,
                 centerPadding: '0',
                 slidesToShow: 1
             }
         },
-    ],
+        {
+            breakpoint: 500,
+            settings: {
+                dots: false,
+                centerMode: false,
+                centerPadding: '0',
+                slidesToShow: 1
+            }
+        },
+    ]
 });
 
 
@@ -162,6 +171,16 @@ $('.gallery__partners').slick({
                 slidesToShow: 1
             }
         },
+
+        {
+            breakpoint: 420,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }
     ]
 });
 
