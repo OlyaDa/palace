@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -40,9 +41,31 @@
                                 <a href="tel:+38(099) 999 99 99" class="tel"> +38(099) 999 99 99 </a>
                             </span>
                 </p>
+
+                <!--/////pop-up-->
                 <div class="button">
-                    <a href="#" class="btn">Заказать звонок</a>
+                    <a  class="btn popup-link" href="#popup">Заказать звонок</a>
                 </div>
+
+                <div id="popup" class="mfp-hide popup">
+                    <!--<div class="modal-form">-->
+                        <div class="container-form">
+                            <p class="question">
+                                Остались вопросы?
+                            </p>
+                            <form action="">
+                                <input placeholder="Имя" type="text">
+                                <input placeholder="Телефон" type="number">
+                                <div class="button text-right">
+                                    <a href="#" class="btn">Заказать звонок</a>
+                                </div>
+                            </form>
+
+                        <!--</div>-->
+                    </div>
+                </div>
+                <!--/////pop-up end-->
+
             </div>
         </div>
 
@@ -112,7 +135,7 @@
                             СОЗДАЁМ УЮТ В ВАШЕМ ДОМЕ НА ПРОТЯЖЕНИИ 10 ЛЕТ
                         </p>
                         <div class="button">
-                            <a href="#" class="btn">Заказать Консультацию</a>
+                            <a  class="btn popup-link" href="#popup">Заказать Консультацию</a>
                         </div>
                     </div>
 
@@ -201,10 +224,10 @@
                                         </p>
 
                                         <div class="button f">
-                                            <a href="#" class="btn">Получить Промокод</a>
+                                            <a  class="btn popup-link" href="#popup">Получить Промокод</a>
                                         </div>
                                         <div class="button">
-                                            <a href="#" class="btn">Подробнее</a>
+                                            <a  class="btn popup-link" href="#popup">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -233,10 +256,10 @@
                                         </p>
 
                                         <div class="button f">
-                                            <a href="#" class="btn">Получить Промокод</a>
+                                            <a  class="btn popup-link" href="#popup">Получить Промокод</a>
                                         </div>
                                         <div class="button">
-                                            <a href="#" class="btn">Подробнее</a>
+                                            <a  class="btn popup-link" href="#popup">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -265,10 +288,10 @@
                                         </p>
 
                                         <div class="button f">
-                                            <a href="#" class="btn">Получить Промокод</a>
+                                            <a  class="btn popup-link" href="#popup">Получить Промокод</a>
                                         </div>
                                         <div class="button">
-                                            <a href="#" class="btn">Подробнее</a>
+                                            <a  class="btn popup-link" href="#popup">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,10 +320,10 @@
                                         </p>
 
                                         <div class="button f">
-                                            <a href="#" class="btn">Получить Промокод</a>
+                                            <a  class="btn popup-link" href="#popup">Получить Промокод</a>
                                         </div>
                                         <div class="button">
-                                            <a href="#" class="btn">Подробнее</a>
+                                            <a  class="btn popup-link" href="#popup">Подробнее</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1030,42 +1053,44 @@
     </main>
     <!--.......................FOOTER.......................-->
     <footer class="footer">
-        <div class="row">
-            <div class="col-lg-3 cont-footer text-left">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3  text-left">
+                    <div class="cont-footer">
+                        <p class="address">
+                            <span class="address-map-title">Адрес:</span>
+                            <span class="address-map-text">г. Киев, ул. Хрещатик 5а</span>
+                        </p>
 
-                <p class="address">
-                    <span class="address-map-title">Адрес:</span>
-                    <span class="address-map-text">г. Киев, ул. Хрещатик 5а</span>
-                </p>
-
-                <p class="phones">
-                    <span class="address-map-title">Телефоны: </span>
-                    <span class="address-map-text">
+                        <p class="phones">
+                            <span class="address-map-title">Телефоны: </span>
+                            <span class="address-map-text">
                         <a href="tel:+38(099) 999 99 99" class="tel"> +38(099) 999 99 99 </a>
                         <a href="tel:+38(099) 999 99 99" class="tel"> +38(099) 999 99 99 </a>
                     </span>
-                </p>
+                        </p>
 
-                <p class="time-work">
-                    <span class="address-map-title">Время работы: </span>
-                    <span class="address-map-text"> Пн-Пт. 08:00-20:00 <br> Сб-Вс. 10:00-18:00</span>
-                </p>
-                <hr>
-                <div class="social-icon">
-                    <a href="#">
-                        <div class="image">
-                            <img src="images/inst.png" alt="instagram">
+                        <p class="time-work">
+                            <span class="address-map-title">Время работы: </span>
+                            <span class="address-map-text"> Пн-Пт. 08:00-20:00 <br> Сб-Вс. 10:00-18:00</span>
+                        </p>
+                        <hr>
+                        <div class="social-icon">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="images/inst.png" alt="instagram">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="images/facebook.png" alt="facebook">
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="#">
-                        <div class="image">
-                            <img src="images/facebook.png" alt="facebook">
-                        </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-lg-9 text-left">
+            <div class="col-lg-9 col-sm-12 text-left">
                 <div class="holder">
                     <div class="map-address">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.458656374667!2d30.52523375093956!3d50.451183279374746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51ea4d56e1%3A0xa166b4673a005fc0!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgNSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1574276458391!5m2!1sru!2sua"
@@ -1076,11 +1101,11 @@
                             <p class="question">
                                 Остались вопросы?
                             </p>
-                            <form action="#">
+                            <form action="">
                                 <input placeholder="Имя" type="text">
                                 <input placeholder="Телефон" type="number">
                                 <div class="button text-right">
-                                    <a href="#" class="btn">Заказать звонок</a>
+                                    <a  class="btn" href="#">Заказать звонок</a>
                                 </div>
                             </form>
 
@@ -1088,6 +1113,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 
@@ -1110,6 +1136,8 @@
 <script src="js/owl.carousel.min.js"></script>
 <!-- Slick -->
 <script src="js/slick.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.min.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
 </body>

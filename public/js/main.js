@@ -192,3 +192,8 @@ $(window).scroll(function() {
         $('.contact').removeClass('header-fixed');
     }
 });
+
+
+$(document).ready(function() {
+    $('.popup-link').magnificPopup();
+});

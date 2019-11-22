@@ -43,6 +43,8 @@ body {
   margin-right: auto;
 }
 
+
+
 //////////////////////HEADER BEGIN//////////////////////
 
 .header {
@@ -84,7 +86,8 @@ body {
       border: 1px solid #340F0F !important;
       border-radius: 0;
       &:hover {
-        background-color: lightgray;
+        border: 1px solid #F0F0F0 !important;
+        background-color: #F0F0F0;;
       }
     }
 
@@ -462,7 +465,10 @@ body {
     border: 1px solid #340F0F;
     border-radius: 0;
     &:hover {
-      background-color: lightgray;
+      &:hover {
+        border: 1px solid #F0F0F0 !important;
+        background-color: #F0F0F0;;
+      }
     }
   }
   .button {
@@ -659,7 +665,10 @@ body {
     border: 1px solid #340F0F;
     border-radius: 0;
     &:hover {
-      background-color: lightgray;
+      &:hover {
+        border: 1px solid #F0F0F0 ;
+        background-color: #F0F0F0;
+      }
     }
   }
 
@@ -3109,12 +3118,11 @@ body {
 .footer {
   padding: 90px 40px 28px 40px;
 
-
   .address {
     margin-bottom: 60px;
   }
 
-  .phones, .address, .time-work, .social{
+  .phones, .address, .time-work, .social {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -3162,7 +3170,8 @@ body {
   .social-icon {
     display: flex;
     .image {
-      margin-right: 50px;
+      margin-right: 25px;
+      margin-left: 25px;
       width: 42px;
       height: 42px;
 
@@ -3192,8 +3201,8 @@ body {
     right: 0;
     display: block;
     padding: 30px 32px;
-    max-width: 440px;
-    max-height: 227px;
+    min-width: 440px;
+    //max-height: 227px;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
 
@@ -3232,21 +3241,113 @@ body {
       outline: none;
     }
 
-
     .btn {
       padding: 18px 25px 18px 23px;
       border: 1px solid #340F0F;
       border-radius: 0;
       &:hover {
-        background-color: lightgray;
+        border: 1px solid #F0F0F0 !important;
+        background-color: #F0F0F0;;
       }
 
     }
   }
 
+  @media (max-width: 991px) {
+    .modal-form {
+      position: relative;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    iframe {
+      width: 100%;
+    }
+    .map-address {
+      width: 100%;
+    }
+    .cont-footer {
+      align-items: center;
+    }
+  }
+  @media (max-width: 556px) {
+    .modal-form {
+      min-width: 276px;
+    }
+  }
 
+  @media (max-width: 320px) {
+    .modal-form {
+      min-width: 216px;
 
+    }
+
+  }
 }
 
 //////////////////////FOOTER END//////////////////////
 
+.slick-prev, .linens .slick-next {
+  z-index: 1;
+}
+
+.popup {
+  background-color: #fff;
+  max-width: 500px;
+  padding: 33px 90px;
+  margin: 0 auto;
+  position: relative;
+
+  .question {
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000;
+  }
+  input {
+    max-width: 374px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+  }
+  input[type="text"] {
+    margin-bottom: 30px;
+  }
+
+  input[type="number"] {
+    margin-bottom: 36px;
+  }
+  input:focus {
+    outline: none;
+  }
+
+
+  .btn {
+    padding: 18px 25px 18px 23px;
+    border: 1px solid #340F0F;
+    border-radius: 0;
+    &:hover {
+      border: 1px solid #F0F0F0 !important;
+      background-color: #F0F0F0;;
+    }
+
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

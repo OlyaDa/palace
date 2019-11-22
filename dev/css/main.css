@@ -65,7 +65,8 @@ body {
       border: 1px solid #340F0F !important;
       border-radius: 0; }
       .header .contact .btn:hover {
-        background-color: lightgray; }
+        border: 1px solid #F0F0F0 !important;
+        background-color: #F0F0F0; }
     .header .contact .contact-title {
       font-family: "Open Sans", sans-serif;
       font-style: normal;
@@ -278,8 +279,9 @@ body {
     padding: 18px 25px 18px 23px;
     border: 1px solid #340F0F;
     border-radius: 0; }
-    .banner .btn:hover {
-      background-color: lightgray; }
+    .banner .btn:hover:hover {
+      border: 1px solid #F0F0F0 !important;
+      background-color: #F0F0F0; }
   .banner .button {
     margin-bottom: 70px; }
   .banner .image {
@@ -402,8 +404,9 @@ body {
     padding: 18px 25px 18px 23px;
     border: 1px solid #340F0F;
     border-radius: 0; }
-    .linens .btn:hover {
-      background-color: lightgray; }
+    .linens .btn:hover:hover {
+      border: 1px solid #F0F0F0;
+      background-color: #F0F0F0; }
   .linens .button {
     display: inline-block; }
   .linens .button.f {
@@ -1918,7 +1921,8 @@ body {
   .footer .social-icon {
     display: flex; }
     .footer .social-icon .image {
-      margin-right: 50px;
+      margin-right: 25px;
+      margin-left: 25px;
       width: 42px;
       height: 42px; }
       .footer .social-icon .image img {
@@ -1936,8 +1940,7 @@ body {
     right: 0;
     display: block;
     padding: 30px 32px;
-    max-width: 440px;
-    max-height: 227px;
+    min-width: 440px;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4); }
     .footer .modal-form .question {
@@ -1973,6 +1976,77 @@ body {
       border: 1px solid #340F0F;
       border-radius: 0; }
       .footer .modal-form .btn:hover {
-        background-color: lightgray; }
+        border: 1px solid #F0F0F0 !important;
+        background-color: #F0F0F0; }
+  @media (max-width: 991px) {
+    .footer .modal-form {
+      position: relative;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+    .footer iframe {
+      width: 100%; }
+    .footer .map-address {
+      width: 100%; }
+    .footer .cont-footer {
+      align-items: center; } }
+  @media (max-width: 556px) {
+    .footer .modal-form {
+      min-width: 276px; } }
+  @media (max-width: 320px) {
+    .footer .modal-form {
+      min-width: 216px; } }
+
+.slick-prev, .linens .slick-next {
+  z-index: 1; }
+
+.popup {
+  background-color: #fff;
+  max-width: 500px;
+  padding: 33px 90px;
+  margin: 0 auto;
+  position: relative; }
+  .popup .question {
+    font-family: "Poiret One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #000000; }
+  .popup input {
+    max-width: 374px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000; }
+  .popup input[type="text"] {
+    margin-bottom: 30px; }
+  .popup input[type="number"] {
+    margin-bottom: 36px; }
+  .popup input:focus {
+    outline: none; }
+  .popup .btn {
+    padding: 18px 25px 18px 23px;
+    border: 1px solid #340F0F;
+    border-radius: 0; }
+    .popup .btn:hover {
+      border: 1px solid #F0F0F0 !important;
+      background-color: #F0F0F0; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */ }
 
 /*# sourceMappingURL=main.css.map */
