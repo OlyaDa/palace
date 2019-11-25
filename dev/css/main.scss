@@ -246,7 +246,7 @@ body {
         }
 
         .new-line {
-          isplay: inline-block;
+          display: inline-block;
           text-align: right;
         }
 
@@ -510,6 +510,9 @@ body {
       justify-content: center;
       align-items: center;
       //margin: 0 33px;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -568,7 +571,7 @@ body {
     .banner-title {
       font-size: 43px;
       line-height: 49px;
-      margin: 0px 0 2px;
+      margin: 0 0 2px;
     }
     .banner-text {
       font-family: "Poiret One", sans-serif;
@@ -728,7 +731,7 @@ body {
   }
 
   .slick-next {
-    right: 0%;
+    right: 0;
   }
 
   .slick-prev, .slick-next {
@@ -935,11 +938,11 @@ body {
     }
 
     .slick-next {
-      right: 0%;
+      right: 0;
     }
 
     .slick-prev {
-      left: 0%;
+      left: 0;
     }
   }
 
@@ -975,7 +978,7 @@ body {
       top: 67%;
     }
 
-    slick-prev {
+    .slick-prev {
       left: -4%;
     }
   }
@@ -1362,11 +1365,11 @@ body {
     }
 
     .gallery .slick-prev {
-      left: 0%;
+      left: 0;
     }
 
     .gallery .slick-next {
-      right: 0%;
+      right: 0;
     }
 
     .gallery-image {
@@ -1748,11 +1751,11 @@ body {
     }
 
     .gallery .slick-prev {
-      left: 0%;
+      left: 0;
     }
 
     .gallery .slick-next {
-      right: 0%;
+      right: 0;
     }
 
     .gallery-image {
@@ -2153,11 +2156,11 @@ body {
     }
 
     .gallery .slick-prev {
-      left: 0%;
+      left: 0;
     }
 
     .gallery .slick-next {
-      right: 0%;
+      right: 0;
     }
 
     .gallery-image {
@@ -2723,11 +2726,11 @@ body {
       }
 
       .slick-prev {
-        left: 0%;
+        left: 0;
       }
 
       .slick-next {
-        right: 0%;
+        right: 0;
       }
 
       .slick-prev, .slick-next {
@@ -2784,11 +2787,11 @@ body {
     }
 
     .gallery .slick-prev {
-      left: 0%;
+      left: 0;
     }
 
     .gallery .slick-next {
-      right: 0%;
+      right: 0;
     }
 
     .gallery-image {
@@ -2827,7 +2830,7 @@ body {
   background: linear-gradient(90deg, #F0ECDD 0%, #FFFFF4 49.93%, #FFFFF4 64.36%, #EAE5D5 100%);
 
   .certificates-title {
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 32px;
@@ -3031,7 +3034,7 @@ body {
   }
 
   .slick-next {
-    right: 0% !important;
+    right: 0 !important;
   }
 
   .slick-prev, .slick-next {
@@ -3128,7 +3131,7 @@ body {
     flex-wrap: wrap;
   }
 
-  time-work {
+  .time-work {
     margin-bottom: 38px;
   }
 
@@ -3204,7 +3207,7 @@ body {
     min-width: 440px;
     //max-height: 227px;
     background-color: #fff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
     .question {
       font-family: "Poiret One", sans-serif;
@@ -3281,7 +3284,7 @@ body {
 
   @media (max-width: 460px) {
     .modal-form {
-      padding: 30px 0px;
+      padding: 30px 0;
       min-width: 207px;
     }
   }
