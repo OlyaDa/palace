@@ -3197,7 +3197,7 @@ body {
 
   .modal-form {
     position: absolute;
-    top: 14%;
+    top: 15%;
     right: 0;
     display: block;
     padding: 30px 32px;
@@ -3231,11 +3231,11 @@ body {
       color: #000000;
     }
     input[type="text"] {
-      margin-bottom: 30px;
+      margin-bottom:15px;
     }
 
     input[type="number"] {
-      margin-bottom: 36px;
+      margin-bottom: 25px;
     }
     input:focus {
       outline: none;
@@ -3256,7 +3256,7 @@ body {
   @media (max-width: 991px) {
     .modal-form {
       position: relative;
-      width: 90%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -3269,20 +3269,30 @@ body {
     .cont-footer {
       align-items: center;
     }
+    .map-address {
+      padding: 30px 0;
+    }
   }
-  @media (max-width: 556px) {
+  @media (max-width: 576px) {
     .modal-form {
-      min-width: 276px;
+      min-width: 240px;
     }
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 460px) {
     .modal-form {
-      min-width: 216px;
-
+      padding: 30px 0px;
+      min-width: 207px;
     }
-
   }
+
+  //@media (max-width: 320px) {
+  //  .modal-form {
+  //    min-width: 216px;
+  //
+  //  }
+  //}
+
 }
 
 //////////////////////FOOTER END//////////////////////

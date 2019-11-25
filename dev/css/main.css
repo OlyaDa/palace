@@ -1936,7 +1936,7 @@ body {
     position: relative; }
   .footer .modal-form {
     position: absolute;
-    top: 14%;
+    top: 15%;
     right: 0;
     display: block;
     padding: 30px 32px;
@@ -1966,9 +1966,9 @@ body {
       line-height: 22px;
       color: #000000; }
     .footer .modal-form input[type="text"] {
-      margin-bottom: 30px; }
+      margin-bottom: 15px; }
     .footer .modal-form input[type="number"] {
-      margin-bottom: 36px; }
+      margin-bottom: 25px; }
     .footer .modal-form input:focus {
       outline: none; }
     .footer .modal-form .btn {
@@ -1981,7 +1981,7 @@ body {
   @media (max-width: 991px) {
     .footer .modal-form {
       position: relative;
-      width: 90%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto; }
     .footer iframe {
@@ -1989,13 +1989,16 @@ body {
     .footer .map-address {
       width: 100%; }
     .footer .cont-footer {
-      align-items: center; } }
-  @media (max-width: 556px) {
+      align-items: center; }
+    .footer .map-address {
+      padding: 30px 0; } }
+  @media (max-width: 576px) {
     .footer .modal-form {
-      min-width: 276px; } }
-  @media (max-width: 320px) {
+      min-width: 240px; } }
+  @media (max-width: 460px) {
     .footer .modal-form {
-      min-width: 216px; } }
+      padding: 30px 0px;
+      min-width: 207px; } }
 
 .slick-prev, .linens .slick-next {
   z-index: 1; }
