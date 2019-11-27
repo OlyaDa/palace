@@ -43,7 +43,11 @@ body {
   margin-right: auto;
 }
 
-
+//@media (max-width: 991px) {
+//  section {
+//    padding-top: 65px !important;
+//  }
+//}
 
 //////////////////////HEADER BEGIN//////////////////////
 
@@ -720,7 +724,7 @@ body {
   .slick-prev:before, .slick-next:before {
     /* font-family: 'slick'; */
     //display: none;
-    font-size: 1px;
+    font-size: 0px;
     line-height: 1;
     opacity: 10.75;
     color: black;
@@ -749,7 +753,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9;
+    z-index: 1;
   }
 
   .slick-prev:active, .slick-next:active {
@@ -1128,7 +1132,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9;
+    z-index: 1;
   }
 
   .slick-prev:active, .slick-next:active {
@@ -1303,7 +1307,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9;
+      z-index: 1;
     }
 
     .slick-prev:active, .slick-next:active {
@@ -1597,7 +1601,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9;
+    z-index: 1;
   }
 
   .slick-prev:active, .slick-next:active {
@@ -1729,7 +1733,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9;
+      z-index: 1;
     }
 
     .slick-prev:active, .slick-next:active {
@@ -2109,7 +2113,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9;
+      z-index: 1;
     }
 
     .slick-prev:active, .slick-next:active {
@@ -2358,7 +2362,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9;
+      z-index: 1;
     }
 
     .slick-prev:active, .slick-next:active {
@@ -2477,7 +2481,7 @@ body {
     border: 1px solid #fff;
     outline: none;
     background: transparent;
-    z-index: 9;
+    z-index: 1;
   }
 
   .slick-prev:active, .slick-next:active {
@@ -2748,7 +2752,7 @@ body {
         border: 1px solid #000;
         outline: none;
         background: transparent;
-        z-index: 9;
+        z-index: 1;
       }
 
       .slick-prev:active, .slick-next:active {
@@ -2940,7 +2944,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9;
+      z-index: 1;
     }
 
     .slick-prev:active, .slick-next:active {
@@ -3022,6 +3026,10 @@ body {
     max-width: 365px;
   }
 
+  .reviews-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   ///slick-prev slick-next
 
@@ -3052,7 +3060,7 @@ body {
     border: 1px solid #fff;
     outline: none;
     background: transparent;
-    z-index: 9;
+    z-index: 1;
   }
 
   .slick-prev:active, .slick-next:active {
@@ -3204,7 +3212,7 @@ body {
     right: 0;
     display: block;
     padding: 30px 32px;
-    min-width: 440px;
+    max-width: 570px;
     //max-height: 227px;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -3244,13 +3252,20 @@ body {
       outline: none;
     }
 
+    .button {
+      border: 1px solid #340F0F;
+      margin-top: 25px;
+      &:hover {
+        background-color: #F0F0F0;
+        border: 1px solid #F0F0F0;
+      }
+    }
     .btn {
       padding: 18px 25px 18px 23px;
-      border: 1px solid #340F0F;
       border-radius: 0;
       &:hover {
         border: 1px solid #F0F0F0 !important;
-        background-color: #F0F0F0;;
+        background-color: #F0F0F0;
       }
 
     }
@@ -3259,7 +3274,7 @@ body {
   @media (max-width: 991px) {
     .modal-form {
       position: relative;
-      width: 100%;
+      //width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -3279,7 +3294,9 @@ body {
   @media (max-width: 576px) {
     .modal-form {
       min-width: 240px;
+      width: 100%;
     }
+
   }
 
   @media (max-width: 460px) {
@@ -3300,9 +3317,11 @@ body {
 
 //////////////////////FOOTER END//////////////////////
 
-.slick-prev, .linens .slick-next {
+.slick-prev, .slick-next {
   z-index: 1;
 }
+
+//////////////////////POPUP//////////////////////
 
 .popup {
   background-color: #fff;
@@ -3320,7 +3339,9 @@ body {
     text-align: center;
     text-transform: lowercase;
     color: #000000;
+    margin-bottom: 37px;
   }
+
   input {
     max-width: 374px;
     padding: 10px;
@@ -3346,21 +3367,99 @@ body {
     outline: none;
   }
 
+  .button {
+    border: 1px solid #340F0F;
+    margin-top: 53px;
+    &:hover {
+      background-color: #F0F0F0;
+      border: 1px solid #F0F0F0;
+    }
+  }
 
   .btn {
     padding: 18px 25px 18px 23px;
-    border: 1px solid #340F0F;
+    //border: 1px solid #340F0F;
     border-radius: 0;
-    &:hover {
-      border: 1px solid #F0F0F0 !important;
-      background-color: #F0F0F0;;
-    }
+  }
 
+  @media (max-width: 568px) {
+      padding: 33px 25px;
   }
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */
-  -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+-webkit-appearance: none;
+margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+@media (max-width: 991px) {
+  .palace, .curtains, .carpets, .map, .floor, .mattress, .certificates {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .curtains .text {
+    padding-top: 60px;
+    padding-bottom: 17px;
+  }
+
+  .curtains .gallery {
+    padding-bottom: 60px;
+  }
+
+  .carpets .carpets-gallery {
+    margin-bottom: 60px;
+  }
+
+  .carpets .cards {
+    margin-bottom: 22px;
+  }
+
+  .carpets .cards {
+    padding-bottom: 22px;
+  }
+
+  .floor {
+    padding-bottom: 22px;
+  }
+
+  .floor .floor-laminat {
+    margin-top: 60px;
+  }
+
+  .mattress {
+    padding-bottom: 22px;
+  }
+
+  .mattress .mattress-adaptive {
+    margin-top: 60px;
+  }
+
+  .mattress .mattress-adaptive .mattress-text {
+    margin-bottom: 17px;
+  }
+
+  .map {
+    padding-top: 45px;
+  }
+
+  .footer hr {
+    display: none;
+  }
+
+  .footer .address, .footer .phones{
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding-top: 65px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h3 {
+    font-size: 26px !important;
+    line-height: 37px !important;
+  }
 }

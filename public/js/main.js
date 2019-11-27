@@ -1,20 +1,4 @@
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 0,
-//     nav: true,
-//     doots: true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:1
-//         },
-//         1000:{
-//             items:3
-//         }
-//     }
-// });
+
 
 $(function(){
     $('.toggle-menu').on('click',function(){
@@ -197,3 +181,11 @@ $(window).scroll(function() {
 $(document).ready(function() {
     $('.popup-link').magnificPopup();
 });
+
+
+$('.phoneidcl').inputmask('+38(999) 999-99-99',{ "oncomplete": function(){
+        $(".disbutt").prop("disabled", false);
+    }, "onincomplete": function(){ $(".disbutt").prop("disabled", true); } });
+
+
+$('.nav-link-new').mPageScroll2id();

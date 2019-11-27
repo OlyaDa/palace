@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Premier Place" />
+    <meta property="og:description"
+          content="«Премьер Палас» занимается производством и  продажей самых популярных солнцезащитных  систем, ковров,
+          штор, карнизов, ковралинов, ламинатов, кроватей и матрасов от лучших производителей европы,
+          а также предоставляет сервисные  услуги по данному виду товаров."/>
+    <meta property="og:image" content="<?php bloginfo(template_url);?>/img/logo.img">
+    <meta property="og:url" content="https://teleport-plus.com/" />
+    <meta property="og:site_name" content="teleport-plus" />
     <title> Tamplate</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800&display=swap" rel="stylesheet">
@@ -50,15 +59,15 @@
                 <div id="popup" class="mfp-hide popup">
                     <!--<div class="modal-form">-->
                         <div class="container-form">
-                            <p class="question">
-                                Остались вопросы?
-                            </p>
-                            <form action="">
-                                <input placeholder="Имя" type="text">
-                                <input placeholder="Телефон" type="number">
-                                <div class="button text-right">
-                                    <a href="#" class="btn">Заказать звонок</a>
-                                </div>
+                            <form class="order-main">
+                                <h3 class="question">
+                                    <span id="customTextForm">Остались вопросы?</span>
+                                </h3>
+                                <input placeholder="Имя" type="text" required>
+                                <input placeholder="Телефон" type="tel" class="phoneidcl" required>
+                                <button class="button disbutt text-right" disabled>
+                                    <span class="btn">Заказать звонок</span>
+                                </button>
                             </form>
 
                         <!--</div>-->
@@ -73,11 +82,11 @@
         <div class="header-nav">
             <nav class="main-nav">
                 <ul class=" menu list-reset">
-                    <li><a class="text-uppercase nav-link" href="#">АКЦИИ </a></li>
-                    <li><a class="text-uppercase nav-link" href="#">О НАС</a></li>
+                    <li><a class="text-uppercase nav-link nav-link-new" href="#stocks">АКЦИИ </a></li>
+                    <li><a class="text-uppercase nav-link nav-link-new" href="#about">О НАС</a></li>
                     <li class="logo"><a class="logo nav-link" href="#"> <img src="images/logo.png" alt="logo"></a></li>
-                    <li><a class="text-uppercase nav-link" href="#">КОНТАКТЫ</a></li>
-                    <li><a class="text-uppercase nav-link" href="#">ОТЗЫВЫ</a></li>
+                    <li><a class="text-uppercase nav-link nav-link-new" href="#contact">КОНТАКТЫ</a></li>
+                    <li><a class="text-uppercase nav-link nav-link-new" href="#reviews">ОТЗЫВЫ</a></li>
 
                     <div class="menu-bottom">
                         <div class="menu-bottom-inner">
@@ -199,7 +208,7 @@
 
         <!--.......................LINENS Slider.......................-->
 
-        <section class="linens">
+        <section class="linens" id="stocks">
             <div class="container">
                 <div class="linens-slider">
 
@@ -337,7 +346,7 @@
 
         <!--.......................PALACE Video.......................-->
 
-        <section class="palace">
+        <section class="palace" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-lg-6">
@@ -618,7 +627,7 @@
 
         <!--.......................MAP.......................-->
 
-        <section class="map">
+        <section class="map" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -971,7 +980,7 @@
 
         <!--.......................REVIEWS.......................-->
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <div class="reviews-slider">
 
@@ -1098,15 +1107,15 @@
                     </div>
                     <div class="modal-form">
                         <div class="container-form">
-                            <p class="question">
-                                Остались вопросы?
-                            </p>
-                            <form action="">
-                                <input placeholder="Имя" type="text">
-                                <input placeholder="Телефон" type="number">
-                                <div class="button text-right">
-                                    <a  class="btn" href="#">Заказать звонок</a>
-                                </div>
+                            <form class="order-main">
+                                <h3 class="question">
+                                   Остались вопросы?
+                                </h3>
+                                <input placeholder="Имя" type="text" required>
+                                <input placeholder="Телефон" type="tel" class="phoneidcl" required>
+                                <button class="button disbutt text-right" disabled>
+                                    <span class="btn">Заказать звонок</span>
+                                </button>
                             </form>
 
                         </div>
@@ -1128,6 +1137,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
 <!-- Fontawesome -->
 <script defer src="js/all.js"></script>
 <!-- Bootstrap -->
@@ -1138,6 +1149,10 @@
 <script src="js/slick.min.js"></script>
 <!-- Magnific Popup core JS file -->
 <script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Page Scroll -->
+<script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+<!--Input Mask -->
+<script src="js/jquery.inputmask.bundle.min.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
 </body>

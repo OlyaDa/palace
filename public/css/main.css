@@ -510,7 +510,7 @@ body {
         right: 0; }
   .linens .slick-prev:before, .linens .slick-next:before {
     /* font-family: 'slick'; */
-    font-size: 1px;
+    font-size: 0px;
     line-height: 1;
     opacity: 10.75;
     color: black; }
@@ -534,7 +534,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9; }
+    z-index: 1; }
   .linens .slick-prev:active, .linens .slick-next:active {
     color: #fff;
     border: 1px solid #000;
@@ -773,7 +773,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9; }
+    z-index: 1; }
   .curtains .slick-prev:active, .curtains .slick-next:active {
     color: #fff;
     border: 1px solid #000;
@@ -896,7 +896,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9; }
+      z-index: 1; }
     .curtains .gallery .slick-prev:active, .curtains .gallery .slick-next:active {
       color: #fff;
       border: 1px solid #000;
@@ -1104,7 +1104,7 @@ body {
     border: 1px solid #000;
     outline: none;
     background: transparent;
-    z-index: 9; }
+    z-index: 1; }
   .carpets .slick-prev:active, .carpets .slick-next:active {
     color: #fff;
     border: 1px solid #000;
@@ -1197,7 +1197,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9; }
+      z-index: 1; }
     .carpets .gallery .slick-prev:active, .carpets .gallery .slick-next:active {
       color: #fff;
       border: 1px solid #000;
@@ -1469,7 +1469,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9; }
+      z-index: 1; }
     .floor .gallery .slick-prev:active, .floor .gallery .slick-next:active {
       color: #fff;
       border: 1px solid #000;
@@ -1631,7 +1631,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9; }
+      z-index: 1; }
     .partners .gallery .slick-prev:active, .partners .gallery .slick-next:active {
       color: #fff;
       border: 1px solid #000;
@@ -1710,7 +1710,7 @@ body {
     border: 1px solid #fff;
     outline: none;
     background: transparent;
-    z-index: 9; }
+    z-index: 1; }
   .mattress .slick-prev:active, .mattress .slick-next:active {
     color: #000;
     border: 1px solid #fff;
@@ -1813,7 +1813,7 @@ body {
         border: 1px solid #000;
         outline: none;
         background: transparent;
-        z-index: 9; }
+        z-index: 1; }
       .mattress .bedroom .gallery .slick-prev:active, .mattress .bedroom .gallery .slick-next:active, .mattress .mattress-adaptive .gallery .slick-prev:active, .mattress .mattress-adaptive .gallery .slick-next:active {
         color: #fff;
         border: 1px solid #000;
@@ -1939,7 +1939,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: transparent;
-      z-index: 9; }
+      z-index: 1; }
     .certificates .gallery .slick-prev:active, .certificates .gallery .slick-next:active {
       color: #fff;
       border: 1px solid #000;
@@ -2000,6 +2000,9 @@ body {
     line-height: 18px;
     color: #FFFFFF;
     max-width: 365px; }
+  .reviews .reviews-body {
+    padding-left: 15px;
+    padding-right: 15px; }
   .reviews .slick-prev:before, .reviews .slick-next:before {
     font-size: 1px; }
   .reviews .slick-prev.slick-arrow {
@@ -2022,7 +2025,7 @@ body {
     border: 1px solid #fff;
     outline: none;
     background: transparent;
-    z-index: 9; }
+    z-index: 1; }
   .reviews .slick-prev:active, .reviews .slick-next:active {
     color: #000;
     border: 1px solid #fff;
@@ -2148,7 +2151,7 @@ body {
     right: 0;
     display: block;
     padding: 30px 32px;
-    min-width: 440px;
+    max-width: 570px;
     background-color: #fff;
     -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); }
@@ -2180,9 +2183,14 @@ body {
       margin-bottom: 25px; }
     .footer .modal-form input:focus {
       outline: none; }
+    .footer .modal-form .button {
+      border: 1px solid #340F0F;
+      margin-top: 25px; }
+      .footer .modal-form .button:hover {
+        background-color: #F0F0F0;
+        border: 1px solid #F0F0F0; }
     .footer .modal-form .btn {
       padding: 18px 25px 18px 23px;
-      border: 1px solid #340F0F;
       border-radius: 0; }
       .footer .modal-form .btn:hover {
         border: 1px solid #F0F0F0 !important;
@@ -2190,7 +2198,6 @@ body {
   @media (max-width: 991px) {
     .footer .modal-form {
       position: relative;
-      width: 100%;
       margin-left: auto;
       margin-right: auto; }
     .footer iframe {
@@ -2205,13 +2212,14 @@ body {
       padding: 30px 0; } }
   @media (max-width: 576px) {
     .footer .modal-form {
-      min-width: 240px; } }
+      min-width: 240px;
+      width: 100%; } }
   @media (max-width: 460px) {
     .footer .modal-form {
       padding: 30px 0;
       min-width: 207px; } }
 
-.slick-prev, .linens .slick-next {
+.slick-prev, .slick-next {
   z-index: 1; }
 
 .popup {
@@ -2228,7 +2236,8 @@ body {
     line-height: 28px;
     text-align: center;
     text-transform: lowercase;
-    color: #000000; }
+    color: #000000;
+    margin-bottom: 37px; }
   .popup input {
     max-width: 374px;
     padding: 10px;
@@ -2248,13 +2257,18 @@ body {
     margin-bottom: 36px; }
   .popup input:focus {
     outline: none; }
+  .popup .button {
+    border: 1px solid #340F0F;
+    margin-top: 53px; }
+    .popup .button:hover {
+      background-color: #F0F0F0;
+      border: 1px solid #F0F0F0; }
   .popup .btn {
     padding: 18px 25px 18px 23px;
-    border: 1px solid #340F0F;
     border-radius: 0; }
-    .popup .btn:hover {
-      border: 1px solid #F0F0F0 !important;
-      background-color: #F0F0F0; }
+  @media (max-width: 568px) {
+    .popup {
+      padding: 33px 25px; } }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -2262,3 +2276,57 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
   /* <-- Apparently some margin are still there even though it's hidden */ }
+
+@media (max-width: 991px) {
+  .palace, .curtains, .carpets, .map, .floor, .mattress, .certificates {
+    padding-top: 65px;
+    padding-bottom: 65px; }
+
+  .curtains .text {
+    padding-top: 60px;
+    padding-bottom: 17px; }
+
+  .curtains .gallery {
+    padding-bottom: 60px; }
+
+  .carpets .carpets-gallery {
+    margin-bottom: 60px; }
+
+  .carpets .cards {
+    margin-bottom: 22px; }
+
+  .carpets .cards {
+    padding-bottom: 22px; }
+
+  .floor {
+    padding-bottom: 22px; }
+
+  .floor .floor-laminat {
+    margin-top: 60px; }
+
+  .mattress {
+    padding-bottom: 22px; }
+
+  .mattress .mattress-adaptive {
+    margin-top: 60px; }
+
+  .mattress .mattress-adaptive .mattress-text {
+    margin-bottom: 17px; }
+
+  .map {
+    padding-top: 45px; }
+
+  .footer hr {
+    display: none; }
+
+  .footer .address, .footer .phones {
+    margin-bottom: 20px; }
+
+  .footer {
+    padding-top: 65px;
+    padding-left: 0;
+    padding-right: 0; }
+
+  h3 {
+    font-size: 26px !important;
+    line-height: 37px !important; } }
